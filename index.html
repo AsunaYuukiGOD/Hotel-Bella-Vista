@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Mis Reservas</a></li>
+                <li><a href="#">Contactenos</a></li>
+                <li><a href="#">Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <h1 class="slider-text">HOTEL BELLA VISTA</h1>
+    </section>
+    
+    <section class="informacion">
+        <div class="info-container">
+            <div class="info-item">
+                <img src="ubi.png" alt="Icono de ubicación">
+                <div class="info-text">
+                    <h3>Ubicación</h3>
+                    <p>Nuestro hotel está estratégicamente situado en una de las mejores playas de la región, lo que permite a nuestros huéspedes disfrutar de impresionantes vistas al mar y acceder fácilmente a la arena dorada y las aguas cristalinas. Además, estamos cerca de atracciones turísticas locales y ofrecemos actividades acuáticas para toda la familia.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="2.jpg" alt="Icono de habitaciones">
+                <div class="info-text">
+                    <h3>Habitaciones</h3>
+                    <p>Contamos con una amplia variedad de habitaciones y suites elegantemente decoradas, muchas de las cuales ofrecen vistas panorámicas al mar. Todas nuestras habitaciones están diseñadas para brindar comodidad y relajación, con comodidades modernas y servicios de alta calidad.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="comida.jpg" alt="Icono de gastronomía">
+                <div class="info-text">
+                    <h3>Gastronomía</h3>
+                    <p>Nuestro hotel ofrece una experiencia gastronómica excepcional con restaurantes frente al mar que sirven una deliciosa variedad de platos locales e internacionales. Disfrute de mariscos frescos, cócteles tropicales y espectaculares puestas de sol mientras cena en nuestros exclusivos establecimientos.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="1.jpg" alt="Icono de instalaciones">
+                <div class="info-text">
+                    <h3>Instalaciones</h3>
+                    <p>Además de nuestra impresionante ubicación frente al mar, ofrecemos una amplia gama de instalaciones para el entretenimiento y la relajación. Disfrute de nuestra piscina al aire libre con vista al mar, nuestro spa de servicio completo, nuestro gimnasio moderno y nuestras áreas de juego para niños.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="personal.jpg" alt="Icono de servicios">
+                <div class="info-text">
+                    <h3>Servicios</h3>
+                    <p>En el Hotel Bella Vista, nos esforzamos por proporcionar un servicio excepcional que garantice una estancia inolvidable para cada huésped. Desde nuestro amable personal de recepción hasta nuestro equipo de conserjería experto, estamos aquí para satisfacer todas sus necesidades y asegurarnos de que tenga una experiencia inolvidable en la playa.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="sos.webp" alt="Icono de sostenibilidad">
+                <div class="info-text">
+                    <h3>Sostenibilidad</h3>
+                    <p>Como parte de nuestro compromiso con el medio ambiente, implementamos prácticas sostenibles en todas nuestras operaciones hoteleras. Desde la conservación del agua hasta la reducción de residuos, nos esforzamos por proteger el entorno natural que nos rodea y promover el turismo responsable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section class="habitaciones">
+        <div class="habitaciones-container">
+            <div class="habitacion">
+                <img src="2.jpg" alt="Habitación Estándar" class="habitacion-img" onclick="redirectToReservationForm()">
+                <br>
+                <div class="descripcion">
+                    <h2>Habitación Standard</h2>
+                    <ul>
+                        <li>1 cama doble con colchón ortopédico</li>
+                        <li>Baño privado con ducha y bañera</li>
+                        <li>Vistas a la ciudad o al jardín</li>
+                        <li>Televisión de pantalla plana con canales por cable</li>
+                        <li>Escritorio de trabajo con silla ergonómica</li>
+                        <li>Minibar con selección de bebidas y snacks</li>
+                        <li>Acceso gratuito a WiFi de alta velocidad</li>
+                        <li>Desayuno buffet incluido en el restaurante</li>
+                        <li>Servicio de habitaciones disponible las 24 horas</li>
+                        <li>Artículos de baño gratuitos y secador de pelo</li>
+                        <li>Aire acondicionado y calefacción regulables</li>
+                        <li>Servicio de lavandería y planchado (cargo adicional)</li>
+                    </ul>
+                    <p class="reservar-text">Reservar</p>
+                </div>
+            </div>
+            <div class="habitacion">
+                <img src="4.jpg" alt="Suite Ejecutiva" class="habitacion-img" onclick="redirectToReservationForm()">
+                <br>
+                <div class="descripcion">
+                    <h2>Suite Ejecutiva</h2>
+                    <ul>
+                        <li>1 cama king-size con sábanas de lujo de algodón egipcio</li>
+                        <li>Baño de mármol con bañera de hidromasaje y ducha de efecto lluvia</li>
+                        <li>Amplio salón con zona de estar y comedor separados</li>
+                        <li>Terraza privada con vistas panorámicas a la playa</li>
+                        <li>Cocina completamente equipada con electrodomésticos de última generación</li>
+                        <li>Televisor LED de alta definición con reproductor de DVD</li>
+                        <li>Acceso exclusivo al salón ejecutivo con desayuno gourmet y cócteles por la tarde</li>
+                        <li>Servicio de conserjería personalizado y asistencia para la organización de eventos</li>
+                        <li>Gimnasio privado y acceso gratuito al spa del hotel</li>
+                        <li>Conexión WiFi de alta velocidad gratuita en toda la suite</li>
+                        <li>Estacionamiento privado gratuito para un vehículo</li>
+                        <li>Servicio de traslado al aeropuerto disponible bajo petición</li>
+                    </ul>
+                    <p class="reservar-text">Reservar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; Hotel</p>
+    </footer>
+</body>
+</html>
+
+

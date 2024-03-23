@@ -1,0 +1,316 @@
+/* Reset de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Familjen Grotesk", sans-serif;
+    background: linear-gradient(to bottom, rgb(67, 72, 81), #ffffff);
+    color: #333;
+}
+
+header {
+    background-color: rgba(101, 105, 111, 0.8); 
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #434851;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #5c87d9;
+}
+
+main {
+    padding: 20px;
+    background-image: url('1.jpg');
+}
+
+footer {
+    background-color: #434851;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos del formulario de reserva */
+.booking-form {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #434851;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.habitaciones-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.habitacion {
+    flex: 1; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+
+.habitacion h2 {
+    margin-top: 0; 
+}
+
+/* Estilos para la descripción */
+.habitacion p {
+    margin-bottom: 0;
+}
+.descripcion {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descripcion ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.descripcion ul li {
+    margin-bottom: 5px;
+}
+
+
+
+.descripcion button:hover {
+    background-color: #555;
+}
+
+
+.habitacion {
+    position: relative;
+    overflow: hidden;
+    background-color: #555;
+}
+
+.habitacion-img {
+    width: 500px;
+    height: 500px;
+    transition: filter 0.3s ease;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.habitacion:hover .habitacion-img{
+    filter: brightness(70%); 
+}
+
+.habitacion:hover .reservar-text{
+    display: block;
+}
+
+.habitacion-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.habitacion:hover .habitacion-overlay {
+    opacity: 1; 
+}
+
+.reservar-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilos para la sección de información */
+.informacion {
+    position: relative;
+    margin-top: 10px;
+    padding: 20px;
+    background-image: url("1.jpg");
+    background-size: cover, cover; 
+    background-position: center, center; 
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin: 0 auto;
+}
+.info-item {
+    margin-top: 10px;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-left: 10px;
+    background-color: #00000077;
+    color: white;
+    text-align: center;
+    
+}
+
+.info-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-text h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.info-text p {
+    margin-bottom: 15px;
+}
+
+.info-item img {
+    width: 210px; 
+    height: 200px; 
+    display: block;
+    margin: 0 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+
+/* Estilos del slider */
+.slider-text{
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 100px;
+    filter: brightness(100%);
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.434); 
+}
+
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.formulario-reserva {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reserva form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-reserva label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.formulario-reserva input[type="date"],
+.formulario-reserva button {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.formulario-reserva select{
+    width: 30%;
+}
+.formulario-reserva button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-reserva button:hover {
+    background-color: #45a049;
+}
+
+.formulario-reserva footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#habitacion-seleccionada {
+    font-weight: bold;
+    color: #333;
+}
